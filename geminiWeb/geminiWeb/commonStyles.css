@@ -1,0 +1,120 @@
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.padded {
+	padding: 10px;
+}
+
+.backgroundDiv {
+	background: rgba(255, 255, 255, 0.75);
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80vw;
+}
+
+.textDiv {
+	font-size: 14px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 20px
+}
+.leftDiv {
+	padding-left: 10px;
+	height: 90px;
+	float: left;
+}
+.centerDiv {
+	vertical-align: top;
+	height: 90px;
+	padding-left: 10px;
+	margin-left: 50px;
+	width: 35%;
+	float: left;
+}
+.sponsor {
+	padding-left: 30px;
+	position: absolute;
+	display: none;
+	height: 90px;
+	width: 250px;
+	object-fit: contain;
+}
+.rightDiv {
+	height: 90px;
+	width: 35%;
+	margin-left: auto;
+	margin-right: 0;
+}
+.socialIcon {
+	width: 40px;
+	height: 40px;
+}
+h2 {
+	font-weight: bold;
+	font-size: 20px;
+}
+h3 {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 16px;
+}
+h4 {
+	font-size: 14px;
+	font-weight: 600;
+	margin: 0px;
+}
+.robotCardLeft, .robotCardRight {
+	display: block;
+	width: 60%;
+	height: 275px;
+	border: 1px solid black;
+	object-fit: contain;
+}
+.robotCardRight {
+	margin-left: auto;
+	margin-right: 10;
+	margin-top: 10;
+	margin-bottom: 10;
+}
+.robotCardLeft {
+	margin-left: 10;
+	margin-right: auto;
+	margin-top: 10;
+	margin-bottom: 10;
+}
+
+.robotCardRight > img, .robotCardLeft > img {
+	width: 45%;
+	height: 100%;
+	max-height: 255px;
+	display: inline-block;
+	object-fit: contain;
+	float: left;
+	margin-left: 10;
+	margin-right: 10;
+	margin-top: 10;
+	margin-bottom: 10;
+}
+
+.robotCardRight > h2, .robotCardLeft > h2 {
+	display: block;
+	font-size: 20px;
+	font-weight: 600;
+	color: black;
+	text-align: center;
+}
+
+.robotCardRight > .desc, .robotCardLeft > .desc {
+	display: block;
+	float: right;
+	width: 45%;
+	margin: 0 10 0 10;
+}
+
+#footer {
+	width: 100px;
+}
