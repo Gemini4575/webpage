@@ -118,3 +118,60 @@ h4 {
 #footer {
 	width: 100px;
 }
+
+/* Sponsor rails (fixed sidebars with vertical scrolling logos) */
+.sponsor-rail {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 120px;
+	height: 100vh;
+	overflow: hidden;
+	z-index: 999;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	padding-top: 18px;
+}
+
+.sponsor-rail-left { left: 8px; }
+.sponsor-rail-right { right: 8px; }
+
+.sponsor-rail .rail-inner {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	align-items: center;
+	pointer-events: auto; /* enable clicking the images */
+	animation: scroll-up 20s linear infinite;
+}
+
+.sponsor-rail-right .rail-inner {
+	animation: scroll-down 20s linear infinite;
+}
+
+.sponsor-rail img {
+	max-width: 90%;
+	height: auto;
+	display: block;
+}
+
+.sponsor-rail .rail-inner:hover {
+	animation-play-state: paused;
+	cursor: pointer;
+}
+
+@keyframes scroll-up {
+	0% { transform: translateY(0); }
+	100% { transform: translateY(-50%); }
+}
+
+@keyframes scroll-down {
+	0% { transform: translateY(0); }
+	100% { transform: translateY(50%); }
+}
+
+/* Hide rails on small screens */
+@media (max-width: 900px) {
+	.sponsor-rail { display: none; }
+} 

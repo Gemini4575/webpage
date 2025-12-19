@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-<style>
+<head>
+    <link rel="stylesheet" href="commonStyles.css">
+    <style>
     body {
         height: 100vh;
         /* Using standard linear-gradient for 2025 modern browser support */
@@ -17,10 +19,97 @@
     .image-container {
         display: flex;
         gap: 20px; /* Adjust this value for space between the images */
+        align-items: center;
+    }
+
+    /* Page-specific image sizing for index.html only */
+    .image-container img {
+        max-width: 220px;/* biggest on wide screens */
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Slightly smaller logo */
+    .image-container img.logo {
+        max-width: 200px;
+        width: 200px;
+    }
+
+    /* Responsive adjustments for narrow screens */
+    @media (max-width: 600px) {
+        .image-container {
+            flex-direction: column;
+            gap: 12px;
+        }
+        .image-container img {
+            max-width: 60vw;
+        }
+        .image-container img.logo {
+            max-width: 50vw;
+            width: auto;
+        }
+    }
+
+    /* Index-only sponsor-rail overrides to keep logos small and scrolling */
+    .sponsor-rail {
+        width: 90px;
+        height: 50vh;
+    }
+    .sponsor-rail img {
+        max-width: 70px;
+        height: auto;
+        display: block;
+    }
+    .sponsor-rail .rail-inner {
+        gap: 12px;
+        animation-duration: 18s;
     }
 
 </style>
+</head>
 <body>
+    <!-- Sponsor rails (left & right) -->
+    <!-- Sponsor links template: edit `sponsors/links-template.html` and add <a href="..."><img src="..."></a> blocks here -->
+    <div class="sponsor-rail sponsor-rail-left" aria-hidden="false">
+        <div class="rail-inner" aria-hidden="false">
+            <img src="sponsors/L3Harris_Technologies-Logo.png" alt="L3Harris">
+            <img src="sponsors/main-logo-oswald.svg" alt="Main Logo">
+            <img src="sponsors/stark-industries.png" alt="Stark Industries">
+            <img src="sponsors/dietpepsi.png" alt="Diet Pepsi">
+            <img src="sponsors/Corellian_Engineering_Corporation.svg" alt="Corellian">
+            <img src="sponsors/dndampersand.png" alt="DnD">
+            <img src="sponsors/Airbnb_Logo.png" alt="Airbnb">
+            <!-- duplicate for continuous scroll -->
+            <img src="sponsors/L3Harris_Technologies-Logo.png" alt="L3Harris">
+            <img src="sponsors/main-logo-oswald.svg" alt="Main Logo">
+            <img src="sponsors/stark-industries.png" alt="Stark Industries">
+            <img src="sponsors/dietpepsi.png" alt="Diet Pepsi">
+            <img src="sponsors/Corellian_Engineering_Corporation.svg" alt="Corellian">
+            <img src="sponsors/dndampersand.png" alt="DnD">
+            <img src="sponsors/Airbnb_Logo.png" alt="Airbnb">
+        </div>
+    </div>
+    <div class="sponsor-rail sponsor-rail-right" aria-hidden="false">
+        <div class="rail-inner" aria-hidden="false">
+            <img src="sponsors/Airbnb_Logo.png" alt="Airbnb">
+            <img src="sponsors/dndampersand.png" alt="DnD">
+            <img src="sponsors/Corellian_Engineering_Corporation.svg" alt="Corellian">
+            <img src="sponsors/dietpepsi.png" alt="Diet Pepsi">
+            <img src="sponsors/stark-industries.png" alt="Stark Industries">
+            <img src="sponsors/main-logo-oswald.svg" alt="Main Logo">
+            <img src="sponsors/L3Harris_Technologies-Logo.png" alt="L3Harris">
+            <!-- duplicate for continuous scroll -->
+            <img src="sponsors/Airbnb_Logo.png" alt="Airbnb">
+            <img src="sponsors/dndampersand.png" alt="DnD">
+            <img src="sponsors/Corellian_Engineering_Corporation.svg" alt="Corellian">
+            <img src="sponsors/dietpepsi.png" alt="Diet Pepsi">
+            <img src="sponsors/stark-industries.png" alt="Stark Industries">
+            <img src="sponsors/main-logo-oswald.svg" alt="Main Logo">
+            <img src="sponsors/L3Harris_Technologies-Logo.png" alt="L3Harris">
+        </div>
+    </div>
+
     <h1> New Web Pages </h1>
     
     <div class="image-container">
