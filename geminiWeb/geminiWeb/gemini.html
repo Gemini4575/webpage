@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html class="theme-gemini">
 	<head>
 		<link rel="stylesheet" href="commonStyles.css">
 		<link rel="stylesheet" href="geminiStyles.css">
@@ -8,44 +9,8 @@
 	<body class="theme-gemini">
 		<!-- Sponsor rails (left & right) -->
 		<!-- Sponsor links template: edit `sponsors/links-template.html` and add <a href="..."><img src="..."></a> blocks here -->
-		<div class="sponsor-rail sponsor-rail-left" aria-hidden="false">
-			<div class="rail-inner" aria-hidden="false">
-				<img src="sponsors/L3Harris_Technologies-Logo.png" alt="L3Harris">
-				<img src="sponsors/main-logo-oswald.svg" alt="Main Logo">
-				<img src="sponsors/stark-industries.png" alt="Stark Industries">
-				<img src="sponsors/dietpepsi.png" alt="Diet Pepsi">
-				<img src="sponsors/Corellian_Engineering_Corporation.svg" alt="Corellian">
-				<img src="sponsors/dndampersand.png" alt="DnD">
-				<img src="sponsors/Airbnb_Logo.png" alt="Airbnb">
-				<!-- duplicate for continuous scroll -->
-				<img src="sponsors/L3Harris_Technologies-Logo.png" alt="L3Harris">
-				<img src="sponsors/main-logo-oswald.svg" alt="Main Logo">
-				<img src="sponsors/stark-industries.png" alt="Stark Industries">
-				<img src="sponsors/dietpepsi.png" alt="Diet Pepsi">
-				<img src="sponsors/Corellian_Engineering_Corporation.svg" alt="Corellian">
-				<img src="sponsors/dndampersand.png" alt="DnD">
-				<img src="sponsors/Airbnb_Logo.png" alt="Airbnb">
-			</div>
-		</div>
-		<div class="sponsor-rail sponsor-rail-right" aria-hidden="false">
-			<div class="rail-inner" aria-hidden="false">
-				<img src="sponsors/Airbnb_Logo.png" alt="Airbnb">
-				<img src="sponsors/dndampersand.png" alt="DnD">
-				<img src="sponsors/Corellian_Engineering_Corporation.svg" alt="Corellian">
-				<img src="sponsors/dietpepsi.png" alt="Diet Pepsi">
-				<img src="sponsors/stark-industries.png" alt="Stark Industries">
-				<img src="sponsors/main-logo-oswald.svg" alt="Main Logo">
-				<img src="sponsors/L3Harris_Technologies-Logo.png" alt="L3Harris">
-				<!-- duplicate for continuous scroll -->
-				<img src="sponsors/Airbnb_Logo.png" alt="Airbnb">
-				<img src="sponsors/dndampersand.png" alt="DnD">
-				<img src="sponsors/Corellian_Engineering_Corporation.svg" alt="Corellian">
-				<img src="sponsors/dietpepsi.png" alt="Diet Pepsi">
-				<img src="sponsors/stark-industries.png" alt="Stark Industries">
-				<img src="sponsors/main-logo-oswald.svg" alt="Main Logo">
-				<img src="sponsors/L3Harris_Technologies-Logo.png" alt="L3Harris">
-			</div>
-		</div>
+
+
 
 		<div class="backgroundDiv">
 			<img class="logo" src="images/geminiTransparentBackground.png">
@@ -102,23 +67,6 @@
 					In 2023, FRC 4575 and FRC 6327 combined into one team under the unified name Gemini. 4575 is now a co-ed team. 
 					<table id="competitionTable">
 						<tr><th>Year</th><th>Event</th><th>Awards</th></tr>
-						<tr><td>2026</td><td>FMA District Philadelphia Event</td></tr>
-						<tr><td>2026</td><td>FMA District Bensalem Event</td></tr>
-						<tr><td>2025</td><td>FMA District Centennial Event</td><td></td></tr>
-						<tr><td>2025</td><td>FMA District Bensalem Event</td><td></td></tr>
-						<tr><td>2025</td><td>CHS District Portsmouth VA Event presented by Newport News Shipyard</td><td></td></tr>
-						<tr><td>2024</td><td>Brunswick Eruption</td><td></td></tr>
-						<tr><td>2024</td><td>Battle o' Baltimore</td><td></td></tr>
-						<tr><td>2024</td><td>Chesapeake Robotics Icebreaker</td><td></td></tr>
-						<tr><td>2024</td><td>Duel on the Delaware</td><td></td></tr>
-						<tr><td>2024</td><td>BattleCry at WPI</td><td></td></tr>
-						<tr><td>2024</td><td>FMA District Bensalem Event</td><td>Imagery Award in honor of Jack Kamen</td></tr>
-						<tr><td>2024</td><td>FMA District Seneca Event</td><td></td></tr>
-						<tr><td>2024</td><td>CHS District Blacksburg VA Event</td><td>Imagery Award in honor of Jack Kamen</td></tr>
-						<tr><td>2023</td><td>Battle o' Baltimore 2023</td><td></td></tr>
-						<tr><td>2023</td><td>BattleCry@WPI 23</td><td></td></tr>
-						<tr><td>2023</td><td>FMA District Bensalem Event</td><td></td></tr>
-						<tr><td>2023</td><td>FMA District Springside Chestnut Hill Academy Event</td><td></td></tr>
 					</table>
 				</p>
 				<p>
@@ -178,6 +126,18 @@
 				&nbsp;
 			</div>
 		</div>
+		<footer class="sponsor-footer" aria-hidden="false">
+        <div class="sponsor-thanks-inner"><strong>Thanks to our sponsors</strong></div>
+        <div class="sponsor-logos">
+            <img src="sponsors/L3Harris_Technologies-Logo.png" alt="L3Harris">
+            <img src="sponsors/main-logo-oswald.svg" alt="Main Logo">
+            <img src="sponsors/stark-industries.png" alt="Stark Industries">
+            <img src="sponsors/GSEP-logo.png" alt="Diet Pepsi">
+            <img src="sponsors/Corellian_Engineering_Corporation.svg" alt="Corellian">
+            <img src="sponsors/DoD-STEM-logo.png" alt="DnD">
+            <img src="sponsors/Airbnb_Logo.png" alt="Airbnb">
+        </div>
+    </footer>
 	</body>
 	<script>
 		const teamName = 'gemini';
@@ -186,13 +146,26 @@
 	<!-- Local fallback data (used when opened via file:// or when proxy is unavailable) -->
 	<script id="competitions-fallback" type="application/json">
 	[
-	  { "year": 2025, "name": "FMA District Centennial Event", "awards": "" },
-	  { "year": 2025, "name": "FMA District Bensalem Event", "awards": "" },
-	  { "year": 2025, "name": "CHS District Portsmouth VA Event presented by Newport News Shipyard", "awards": "" },
-	  { "year": 2024, "name": "Brunswick Eruption", "awards": "" },
-	  { "year": 2024, "name": "Battle o' Baltimore", "awards": "" },
-	  { "year": 2024, "name": "Chesapeake Robotics Icebreaker", "awards": "" },
-	  { "year": 2024, "name": "Duel on the Delaware", "awards": "" }
+		{ "year": 2026, "name": "FMA District Philadelphia Event", "awards": "" },
+		{ "year": 2026, "name": "FMA District Bensalem Event", "awards": "" },
+
+		{ "year": 2025, "name": "FMA District Centennial Event", "awards": "" },
+		{ "year": 2025, "name": "FMA District Bensalem Event", "awards": "" },
+		{ "year": 2025, "name": "CHS District Portsmouth VA Event presented by Newport News Shipyard", "awards": "" },
+
+		{ "year": 2024, "name": "Brunswick Eruption", "awards": "" },
+		{ "year": 2024, "name": "Battle o' Baltimore", "awards": "" },
+		{ "year": 2024, "name": "Chesapeake Robotics Icebreaker", "awards": "" },
+		{ "year": 2024, "name": "Duel on the Delaware", "awards": "" },
+		{ "year": 2024, "name": "BattleCry at WPI", "awards": "" },
+		{ "year": 2024, "name": "FMA District Bensalem Event", "awards": "Imagery Award in honor of Jack Kamen" },
+		{ "year": 2024, "name": "FMA District Seneca Event", "awards": "" },
+		{ "year": 2024, "name": "CHS District Blacksburg VA Event", "awards": "Imagery Award in honor of Jack Kamen" },
+
+		{ "year": 2023, "name": "Battle o' Baltimore 2023", "awards": "" },
+		{ "year": 2023, "name": "BattleCry@WPI 23", "awards": "" },
+		{ "year": 2023, "name": "FMA District Bensalem Event", "awards": "" },
+		{ "year": 2023, "name": "FMA District Springside Chestnut Hill Academy Event", "awards": "" }
 	]
 	</script>
 

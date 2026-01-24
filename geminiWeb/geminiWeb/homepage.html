@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Eastern Pennsylvania Robotics Alliance (EPRA)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="CommonStyles.css">
+  <style>
+    /* --- Hero Section --- */
+    .hero-container {
+      margin-top: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero-slides {
+      width: 500px;
+      height: 350px;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 1.5s ease-in-out;
+    }
+
+    .active-slide {
+      opacity: 1;
+    }
+
+    .hero-dots {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      background: #ccc;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .active-dot {
+      background: #000;
+    }
+
+    /* --- Round Features --- */
+    .features {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      gap: 120px;
+      text-align: center;
+    }
+
+    .feat img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .feat-title {
+      margin-top: 10px;
+      font-size: 18px;
+      color: green;
+      font-weight: bold;
+    }
+
+    .feat-text {
+      margin-top: 6px;
+      color: #444;
+      font-size: 14px;
+      width: 200px;
+    }
+
+    .feat a {
+      display: block;
+      margin-top: 10px;
+      color: #0b0d54;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="header-wrap">
+    <div class="logo">
+      <img src="images/EPRAlogo.jpg" alt="Logo">
+    </div>
+    <div class="title-area">
+      <h1>Eastern Pennsylvania Robotics Alliance (EPRA)</h1>
+      <div class="subtitle">FIRST Robotics Programming in Partnership with 4H of Delaware County and The Girl Scouts of
+        Eastern PA.</div>
+    </div>
+    <div class="social">
+      <a href="https://www.instagram.com/frc_4575/" target="_blank">
+        <img src="images/icons8-instagram-logo-94.png" alt="Social 1">
+      </a>
+      <a href="https://www.facebook.com/frc4575" target="_blank">
+        <img src="images/icons8-facebook-48.png" alt="Social 2">
+      </a>
+      <a href="https://x.com/frcteam4575" target="_blank">
+        <img src="images/xLogo.png" alt="Social 3">
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li class="active">Home</li>
+      <li>About Us</li>
+      <li>Our Teams</li>
+      <li>Summer Camp</li>
+      <li>Sponsors</li>
+      <li>Contact Us</li>
+      <li>Donate</li>
+      <li>Robotstock</li>
+      <li>Curriculum</li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero-container">
+    <div class="hero-slides">
+      <img src="images/8144.jpg" class="slide active-slide">
+      <img src="images/1000013795_720.jpg" class="slide">
+      <img src="images/1000013795_720.jpg" class="slide">
+
+      <div class="hero-dots">
+        <div class="dot active-dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+
+    <!-- Round Features -->
+    <div class="features">
+
+      <div class="feat">
+        <a href="join.html" class="feat-top">
+          <img src="images/join_03.png" alt="">
+          <div class="feat-title">Join Our Program</div>
+        </a>
+        <div class="feat-text">Learn more about our teams and sign up!</div>
+      </div>
+
+      <div class="feat">
+        <a href="donate.html" class="feat-top">
+          <img src="images/donate_03.png" alt="">
+          <div class="feat-title">Donate</div>
+        </a>
+        <div class="feat-text">Become a sponsor!</div>
+      </div>
+
+      <div class="feat">
+        <a href="camps.html" class="feat-top">
+          <img src="images/camp_03.png" alt="">
+          <div class="feat-title">Camps</div>
+        </a>
+        <div class="feat-text">Learn more about our summer camps and year round opportunities.</div>
+      </div>
+
+    </div>
+
+    <footer class="sponsor-footer" aria-hidden="false">
+      <div class="sponsor-thanks-inner"><strong>Thanks to our sponsors</strong></div>
+      <div class="sponsor-logos">
+        <img src="sponsors/L3Harris_Technologies-Logo.png" alt="L3Harris">
+        <img src="sponsors/main-logo-oswald.svg" alt="Main Logo">
+        <img src="sponsors/stark-industries.png" alt="Stark Industries">
+        <img src="sponsors/GSEP-logo.png" alt="Diet Pepsi">
+        <img src="sponsors/Corellian_Engineering_Corporation.svg" alt="Corellian">
+        <img src="sponsors/DoD-STEM-logo.png" alt="DnD">
+        <img src="sponsors/Airbnb_Logo.png" alt="Airbnb">
+      </div>
+    </footer>
+
+  </div>
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+
+    let current = 0;
+
+    function showSlide(index) {
+      slides.forEach((s, i) => s.classList.toggle('active-slide', i === index));
+      dots.forEach((d, i) => d.classList.toggle('active-dot', i === index));
+    }
+
+    function nextSlide() {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    }
+
+    dots.forEach((dot, i) => {
+      dot.onclick = () => {
+        current = i;
+        showSlide(current);
+      };
+    });
+
+    // Auto-fade every 4 seconds
+    setInterval(nextSlide, 4000);
+  </script>
+  <script src="scripts/jquery-3.7.1.min.js"></script>
+  <script src="scripts/commonScripts.js"></script>
+
+</body>
+
+</html>

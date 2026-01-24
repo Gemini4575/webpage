@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Join Our Teams | EPRA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- =====================
+       BASE STYLES
+  ====================== -->
+    <style>
+        :root {
+            --green: #20871b;
+            --dark-green: #003300;
+            --text: #222;
+            --bg: #ffffff;
+            --light-gray: #f4f4f4;
+            --focus: #ffbf47;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            color: var(--green);
+            text-decoration: none;
+        }
+
+        /* =====================
+       ACCESSIBILITY
+    ====================== */
+        a:focus-visible {
+            outline: 3px solid var(--focus);
+            outline-offset: 3px;
+        }
+
+        /* =====================
+       HEADER
+    ====================== */
+        header {
+            border-bottom: 1px solid #ddd;
+            background: #fff;
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: auto;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo img {
+            width: 80px;
+        }
+
+        .site-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .site-description {
+            font-size: 0.85rem;
+            color: #555;
+        }
+
+        /* =====================
+       SOCIAL ICONS
+    ====================== */
+        .social {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .social a {
+            width: 28px;
+            height: 28px;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        .social a:hover {
+            transform: translateY(-2px);
+            opacity: 0.8;
+        }
+
+        /* =====================
+       NAVIGATION
+    ====================== */
+        nav {
+            background: var(--green);
+        }
+
+        .menu {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .menu>li {
+            position: relative;
+        }
+
+        .menu>li>a {
+            display: block;
+            padding: 0.9rem 1rem;
+            color: white;
+            font-weight: bold;
+        }
+
+        .menu>li>a:hover {
+            background: rgba(0, 0, 0, 0.15);
+        }
+
+        /* Dropdown */
+        .submenu {
+            display: none;
+            position: absolute;
+            background: white;
+            list-style: none;
+            padding: 0;
+            min-width: 220px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            z-index: 100;
+        }
+
+        .submenu a {
+            display: block;
+            padding: 0.6rem 0.9rem;
+            color: var(--text);
+        }
+
+        .submenu a:hover {
+            background: var(--light-gray);
+        }
+
+        .menu li:hover>.submenu {
+            display: block;
+        }
+
+        /* =====================
+       MAIN CONTENT
+    ====================== */
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 2rem 1rem;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: var(--dark-green);
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        /* =====================
+       IMAGE ROW
+    ====================== */
+        .image-row {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+
+        .image-row img {
+            width: 150px;
+        }
+
+        /* =====================
+       PROGRAM CARDS
+    ====================== */
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 6px;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        /* Hover only applies if card contains links */
+        .card:has(a:hover),
+        .card:has(a:focus-visible) {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .card a {
+            font-weight: bold;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        /* =====================
+       FOOTER
+    ====================== */
+        footer {
+            background: #111;
+            color: #fff;
+            padding: 1.5rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        footer a {
+            color: #9adf9a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =====================
+     HEADER
+===================== -->
+    <div class="header-wrap">
+        <div class="logo">
+            <img src="images/EPRAlogo.jpg" alt="Logo">
+        </div>
+        <div class="title-area">
+            <h1>Eastern Pennsylvania Robotics Alliance (EPRA)</h1>
+            <div class="subtitle">FIRST Robotics Programming in Partnership with 4H of Delaware County and The Girl
+                Scouts of
+                Eastern PA.</div>
+        </div>
+        <div class="social">
+            <a href="https://www.instagram.com/frc_4575/" target="_blank">
+                <img src="images/icons8-instagram-logo-94.png" alt="Social 1">
+            </a>
+            <a href="https://www.facebook.com/frc4575" target="_blank">
+                <img src="images/icons8-facebook-48.png" alt="Social 2">
+            </a>
+            <a href="https://x.com/frcteam4575" target="_blank">
+                <img src="images/xLogo.png" alt="Social 3">
+            </a>
+        </div>
+
+    </div>
+
+    <!-- =====================
+       NAV
+  ====================== -->
+    <nav>
+        <ul class="menu">
+            <!-- Replace # with actual pages later -->
+            <li><a href="#">Home</a></li>
+
+            <li>
+                <a href="#">About Us</a>
+                <ul class="submenu">
+                    <li><a href="#">Mission Statement</a></li>
+                    <li><a href="#">Outreach</a></li>
+                    <li><a href="#">History</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">Our Teams</a>
+                <ul class="submenu">
+                    <li><a href="#">Join Our Teams</a></li>
+                    <li><a href="#">FRC 4575 Gemini</a></li>
+                    <li><a href="#">FLL Programs</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Sponsors</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Donate</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <!-- =====================
+     MAIN
+===================== -->
+    <main>
+
+        <h1 class="center">Join Our Teams!</h1>
+
+        <div class="image-row">
+            <img src="https://via.placeholder.com/150" alt="">
+            <img src="https://via.placeholder.com/150" alt="">
+            <img src="https://via.placeholder.com/150" alt="">
+            <img src="https://via.placeholder.com/150" alt="">
+        </div>
+
+        <p>
+            We are currently accepting registrations for our Spring 2025 session.
+            Programs are available for students entering Pre-K through 12th grade.
+        </p>
+
+        <!-- =====================
+       PROGRAM CARD
+  ====================== -->
+        <section class="card">
+            <h2>FIRST LEGO League Discover (Pre-K – Grade 1)</h2>
+            <p>
+                Our youngest learners explore early programming, robotics,
+                engineering concepts, and creativity.
+            </p>
+
+            <!-- Placeholder links -->
+            <p><a href="#">COED Tuesdays (5:30–6:30)</a></p>
+            <p><a href="#">All-Girl Wednesdays (5:30–6:30)</a></p>
+        </section>
+
+        <section class="card">
+            <h2>FIRST LEGO League Challenge (Grades 3–8)</h2>
+            <p>
+                A competitive robotics program teaching programming,
+                engineering, teamwork, and problem-solving.
+            </p>
+
+            <p><a href="#">Competition Team – Mondays</a></p>
+            <p><a href="#">Competition Team – Tuesdays</a></p>
+            <p><a href="#">All-Girl Team – Wednesdays</a></p>
+        </section>
+
+        <section class="card">
+            <h2>FTC & FRC Programs (Grades 6–12)</h2>
+            <p>
+                Design, build, and program competition-level robots while learning
+                engineering, leadership, and real-world skills.
+            </p>
+
+            <p><a href="#">Register for FTC</a></p>
+            <p><a href="#">Register for FRC</a></p>
+        </section>
+
+    </main>
+
+    <!-- =====================
+     FOOTER
+===================== -->
+    <footer>
+        © 2025 Eastern Pennsylvania Robotics Alliance (EPRA)
+        <br>
+        <small>Standalone HTML – no WordPress required</small>
+    </footer>
+
+</body>
+
+</html>

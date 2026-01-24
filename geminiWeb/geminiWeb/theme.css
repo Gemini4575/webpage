@@ -96,20 +96,31 @@ p { margin: 12px 0; }
 body.theme-gemini {
   --accent: #6b21a8; /* purple */
   --accent-2: #059669; /* green */
-  background-color: #42135b;
+}
+body.theme-gemini::before, html.theme-gemini::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
   background: linear-gradient(180deg, #3e0f52 0%, #6b21a8 35%, #059669 100%);
   background-size: cover;
-  background-attachment: fixed;
+  pointer-events: none;
 }
+html.theme-gemini { background: transparent; }
+/* Ensure any body-level background (e.g., geminiStyles.css) doesn't cover the pseudo-element */
+body.theme-gemini { background: none !important; }
 
-body.theme-mallrats {
-  --accent: #b91c1c; /* crimson */
-  --accent-2: #7f1d1d; /* dark crimson */
-  background-color: #7a1212;
+body.theme-mallrats::before, html.theme-mallrats::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
   background: linear-gradient(180deg, #7a1212 0%, #b91c1c 40%, #7f1d1d 100%);
   background-size: cover;
-  background-attachment: fixed;
+  pointer-events: none;
 }
+html.theme-mallrats { background: transparent; }
+body.theme-mallrats { background: none !important; }
 
 /* Optional: small logo tint for mallrats so the color feels integrated */
 body.theme-mallrats .logo {
