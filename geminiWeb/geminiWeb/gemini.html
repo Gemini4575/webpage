@@ -1,150 +1,239 @@
 <!DOCTYPE html>
-<html class="theme-gemini">
-	<head>
-		<link rel="stylesheet" href="commonStyles.css">
-		<link rel="stylesheet" href="geminiStyles.css">
-		<link rel="stylesheet" href="theme.css">
-		<script src="https://kit.fontawesome.com/0c1f377606.js" crossorigin="anonymous"></script>
-	</head>
-	<body class="theme-gemini">
-		<!-- Sponsor rails (left & right) -->
-		<!-- Sponsor links template: edit `sponsors/links-template.html` and add <a href="..."><img src="..."></a> blocks here -->
+<html class="theme-gemini" lang="en">
 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FRC 4575 Gemini | EPRA</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/0c1f377606.js" crossorigin="anonymous"></script>
+</head>
 
-
+<body class="theme-gemini">
+	<div class="header-wrap">
+		<div class="logo">
+			<img src="images/EPRAlogo.jpg" alt="EPRA logo">
+		</div>
+		<div class="title-area">
+			<h1>Eastern Pennsylvania Robotics Alliance (EPRA)</h1>
+			<div class="subtitle">FIRST Robotics Programming in Partnership with 4H of Delaware County and The Girl
+				Scouts of Eastern PA.</div>
+		</div>
+		<div class="social">
+			<a href="https://www.instagram.com/frc_4575/" target="_blank">
+				<img src="images/icons8-instagram-logo-94.png" alt="Instagram">
+			</a>
+			<a href="https://www.facebook.com/frc4575" target="_blank">
+				<img src="images/icons8-facebook-48.png" alt="Facebook">
+			</a>
+			<a href="https://x.com/frcteam4575" target="_blank">
+				<img src="images/xLogo.png" alt="X">
+			</a>
+		</div>
+	</div>
+	<nav>
+		<ul class="menu">
+			<li><a href="homepage.html">Home</a></li>
+			<li><a href="aboutUs.html">About Us</a>
+				<ul class="submenu">
+					<li><a href="mission.html">Mission Statement</a></li>
+					<li><a href="outreach.html">Outreach</a></li>
+					<li><a href="history.html">History</a></li>
+					<li><a href="press.html">Press</a></li>
+					<li><a href="photoGallery.html">Photo Gallery</a></li>
+				</ul>
+			</li>
+			<li class="active">
+				<a href="ourTeams.html">Our Teams</a>
+				<ul class="submenu">
+					<li><a href="gemini.html">FRC 4575 Gemini</a></li>
+					<li><a href="mallrats.html">FTC 18387 Mall Rats</a></li>
+					<li><a href="join.html">Join Our Teams</a></li>
+				</ul>
+			</li>
+			<li><a href="camps.html">Summer Camp</a></li>
+			<li><a href="sponsors.html">Sponsors</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li><a href="donate.html">Donate</a></li>
+			<li><a href="robotstock.html">Robotstock</a></li>
+			<li><a href="curriculum.html">Curriculum</a></li>
+		</ul>
+	</nav>
+	<div class="page-shell">
 		<div class="backgroundDiv">
-			<img class="logo" src="images/geminiTransparentBackground.png">
-			<div>
-				<div id="social" class="leftDiv">
-					<h3> Follow us:</h3>
-					<a href="https://www.instagram.com/ftc_18387/" target="_"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-					<a href="https://www.facebook.com/FTCTEAM18387" target="_"><i class="fa-brands fa-facebook fa-2xl"></i></a>
-					<a href="https://bsky.app/profile/geminifrc4575.bsky.social" target="_"><i class="fa-brands fa-bluesky fa-2xl"></i></a>
-					<a href="https://github.com/Gemini4575" target="_"><i class="fa-brands fa-github fa-2xl"></i></a>
-				</div>
-				<div id="sponsors" class="centerDiv">
-				</div>
-				<div class="rightDiv">
-					<div id="events" style="margin-left: auto;" class="textDiv">
-						Upcoming Events:
+			<div class="team-topbar">
+				<div class="team-panel">
+					<h3>Follow Gemini</h3>
+					<div class="team-social-links">
+						<a href="https://www.instagram.com/ftc_18387/" target="_"><i
+								class="fa-brands fa-instagram fa-2xl"></i></a>
+						<a href="https://www.facebook.com/FTCTEAM18387" target="_"><i
+								class="fa-brands fa-facebook fa-2xl"></i></a>
+						<a href="https://bsky.app/profile/geminifrc4575.bsky.social" target="_"><i
+								class="fa-brands fa-bluesky fa-2xl"></i></a>
+						<a href="https://github.com/Gemini4575" target="_"><i
+								class="fa-brands fa-github fa-2xl"></i></a>
 					</div>
 				</div>
+				<div class="team-logo-wrap">
+					<img class="team-logo" src="images/geminiTransparentBackground.png" alt="Gemini logo">
+				</div>
+				<div class="team-panel">
+					<h3>Upcoming Events</h3>
+					<div id="events" class="team-event-copy">Upcoming Events:</div>
+				</div>
 			</div>
-			<div id="description" class="textDiv">
-				<h2> Who we Are </h2>
-				Vivamus eget eros id mauris sodales auctor at sit amet orci. Sed sagittis, tellus nec molestie eleifend, leo metus feugiat diam, at pulvinar ex nibh ac 
-				sem. Nunc lacinia nisi nec odio sagittis finibus. Proin egestas semper dui ac imperdiet. Sed elit nibh, tempus non ligula eu, luctus condimentum nulla.
-				Sed eu hendrerit sem. Nulla blandit sem at finibus tristique. Donec tempus, massa et euismod tempus, risus nibh ultrices eros, eu tempor sem nulla at nunc.
-				Nulla vehicula mollis gravida. Quisque commodo lectus laoreet nibh sagittis, in posuere turpis ullamcorper. Curabitur eget tincidunt magna, quis tempus
-				justo. Pellentesque varius vulputate sem in ultrices. Integer dapibus erat ac ante fringilla, ac suscipit lorem lobortis. Donec nisi tortor, auctor a
-				egestas eu, convallis sit amet leo. Nam lacus enim, efficitur ullamcorper sollicitudin vitae, faucibus vitae purus.
-			</div>
-			<div id="history" class="textDiv">
-				<h2> History </h2>
-				<p>
+			<div class="team-grid">
+				<div id="description" class="textDiv team-section">
+					<h2> Who we Are </h2>
+					Vivamus eget eros id mauris sodales auctor at sit amet orci. Sed sagittis, tellus nec molestie
+					eleifend, leo metus feugiat diam, at pulvinar ex nibh ac
+					sem. Nunc lacinia nisi nec odio sagittis finibus. Proin egestas semper dui ac imperdiet. Sed elit
+					nibh, tempus non ligula eu, luctus condimentum nulla.
+					Sed eu hendrerit sem. Nulla blandit sem at finibus tristique. Donec tempus, massa et euismod tempus,
+					risus nibh ultrices eros, eu tempor sem nulla at nunc.
+					Nulla vehicula mollis gravida. Quisque commodo lectus laoreet nibh sagittis, in posuere turpis
+					ullamcorper. Curabitur eget tincidunt magna, quis tempus
+					justo. Pellentesque varius vulputate sem in ultrices. Integer dapibus erat ac ante fringilla, ac
+					suscipit lorem lobortis. Donec nisi tortor, auctor a
+					egestas eu, convallis sit amet leo. Nam lacus enim, efficitur ullamcorper sollicitudin vitae,
+					faucibus vitae purus.
+				</div>
+				<div id="history" class="textDiv team-section">
+					<h2> History </h2>
+					<p>
 					<h4>Pre-FRC Era</h4>
-					Erin McCullough used to be a part of a robotics team at her middle school, but she wasn't able to be as involved as the boys on the team because she
-					was a girl. Because of this she went to her father, Joe McCullough, and asked to start a Girl Scout robotics team. Mr. Joe created 2 FLL teams in 
+					Erin McCullough used to be a part of a robotics team at her middle school, but she wasn't able to be
+					as involved as the boys on the team because she
+					was a girl. Because of this she went to her father, Joe McCullough, and asked to start a Girl Scout
+					robotics team. Mr. Joe created 2 FLL teams in
 					2011 (need to check that year) that were associated with the Girl Scouts of Eastern Pennsylvania.
-				</p>
-				<p>
+					</p>
+					<p>
 					<h4>Early Tin Mints</h4>
-					When Erin aged out of FLL in 2013, they created The Tin Mints, FRC team 4575, that was the first Girl Scout FRC team in the district. We started out
-					strong with 4 people on the team, and the team ranked 24th in the whole district, getting many rookie and non-rookie awards. We also had some help 
+					When Erin aged out of FLL in 2013, they created The Tin Mints, FRC team 4575, that was the first
+					Girl Scout FRC team in the district. We started out
+					strong with 4 people on the team, and the team ranked 24th in the whole district, getting many
+					rookie and non-rookie awards. We also had some help
 					from our mentor team called Royal Assault, FRC 357, based out of Upper Darby High School.
-				</p>
-				<p>
-					In 2020, 4575 Competed at the Week 1 district event at Hatboro-Horsham high school
-				</p>
-				<p>
+					</p>
+					<p>
+						In 2020, 4575 Competed at the Week 1 district event at Hatboro-Horsham high school
+					</p>
+					<p>
 					<h4>Covid Years</h4>
 					After Week 1, every competition for the rest of the season was canceled
-					4575 was located in a mall, and could not access their shop regardless of safety precautions taken. All FLL and FRC teams continued to meet
-					virtually. During 2020, 4575 also created FTC 18387, The Mall Rats, who competed virtually during their first year. When it became safe, 4575
+					4575 was located in a mall, and could not access their shop regardless of safety precautions taken.
+					All FLL and FRC teams continued to meet
+					virtually. During 2020, 4575 also created FTC 18387, The Mall Rats, who competed virtually during
+					their first year. When it became safe, 4575
 					reopened their doors both to normal programs and summer camp.
-				</p>
-				<p>
-					In 2023, FRC 4575 and FRC 6327 combined into one team under the unified name Gemini. 4575 is now a co-ed team. 
+					</p>
+					<p>
+						In 2023, FRC 4575 and FRC 6327 combined into one team under the unified name Gemini. 4575 is now
+						a co-ed team.
 					<table id="competitionTable">
-						<tr><th>Year</th><th>Event</th><th>Awards</th></tr>
+						<tr>
+							<th>Year</th>
+							<th>Event</th>
+							<th>Awards</th>
+						</tr>
 					</table>
-				</p>
-				<p>
+					</p>
+					<p>
 					<h4>Awards</h4>
-					In 2015, during Recycle Rush, we went to the Queen City Regional, and were the second pick of the winning alliance with Team Titanium and The
-					Pink Team. In 2017, at the Montgomery District Event, we won the Chairman's award and competed for the award at the District Championship in
+					In 2015, during Recycle Rush, we went to the Queen City Regional, and were the second pick of the
+					winning alliance with Team Titanium and The
+					Pink Team. In 2017, at the Montgomery District Event, we won the Chairman's award and competed for
+					the award at the District Championship in
 					Lehigh, PA. We won this award, in part, for creating FRC 6327, The Tin Men
 					6327 would later change their name to The Tin Soldiers, and then The Fighting Gophers
-					Additionally, 4575 created the Eastern PA Robotics Alliance, a 501(c)3 non-profit that supported many FLL and FLL jr. teams, as well as the 2
-					FRC teams. In 2016, we ran a 2 week long summer camp for the first time with over 40 students. Our summer camp continues to be run every year
-					up to the present.  Click Here for more Info About summer camp
-				</p>
-			</div>
-			<div class="textDiv">
-				<h2> Our Robots </h2>
-				<img src="images/20241107_175323.jpg" width="400" height="183" class="center padded" title="In 2024 Gemini competed in 9 in season and off season events, winning 8 awards">
-				<br/>
-				Vivamus eget eros id mauris sodales auctor at sit amet orci. Sed sagittis, tellus nec molestie eleifend, leo metus feugiat diam, at pulvinar ex nibh ac 
-				sem. Nunc lacinia nisi nec odio sagittis finibus. Proin egestas semper dui ac imperdiet. Sed elit nibh, tempus non ligula eu, luctus condimentum nulla.
-				Sed eu hendrerit sem. Nulla blandit sem at finibus tristique. Donec tempus, massa et euismod tempus, risus nibh ultrices eros, eu tempor sem nulla at nunc.
-				Nulla vehicula mollis gravida. Quisque commodo lectus laoreet nibh sagittis, in posuere turpis ullamcorper. Curabitur eget tincidunt magna, quis tempus
-				justo. Pellentesque varius vulputate sem in ultrices. Integer dapibus erat ac ante fringilla, ac suscipit lorem lobortis. Donec nisi tortor, auctor a
-				egestas eu, convallis sit amet leo. Nam lacus enim, efficitur ullamcorper sollicitudin vitae, faucibus vitae purus.
-			</div>
+					Additionally, 4575 created the Eastern PA Robotics Alliance, a 501(c)3 non-profit that supported
+					many FLL and FLL jr. teams, as well as the 2
+					FRC teams. In 2016, we ran a 2 week long summer camp for the first time with over 40 students. Our
+					summer camp continues to be run every year
+					up to the present. Click Here for more Info About summer camp
+					</p>
+				</div>
+				<div class="textDiv team-section">
+					<h2> Our Robots </h2>
+					<img src="images/20241107_175323.jpg" width="400" height="183" class="center padded"
+						title="In 2024 Gemini competed in 9 in season and off season events, winning 8 awards">
+					<br />
+					Vivamus eget eros id mauris sodales auctor at sit amet orci. Sed sagittis, tellus nec molestie
+					eleifend, leo metus feugiat diam, at pulvinar ex nibh ac
+					sem. Nunc lacinia nisi nec odio sagittis finibus. Proin egestas semper dui ac imperdiet. Sed elit
+					nibh, tempus non ligula eu, luctus condimentum nulla.
+					Sed eu hendrerit sem. Nulla blandit sem at finibus tristique. Donec tempus, massa et euismod tempus,
+					risus nibh ultrices eros, eu tempor sem nulla at nunc.
+					Nulla vehicula mollis gravida. Quisque commodo lectus laoreet nibh sagittis, in posuere turpis
+					ullamcorper. Curabitur eget tincidunt magna, quis tempus
+					justo. Pellentesque varius vulputate sem in ultrices. Integer dapibus erat ac ante fringilla, ac
+					suscipit lorem lobortis. Donec nisi tortor, auctor a
+					egestas eu, convallis sit amet leo. Nam lacus enim, efficitur ullamcorper sollicitudin vitae,
+					faucibus vitae purus.
+				</div>
 
-			<div class="robotCardRight">
-				<img src="images/lyra.jpg"/>
-				<div class="desc">
-					<h2>Lyra </h2>
-					<b>Season:</b> 2024<br/>
-					<b>Record:</b> 16-16-2 <br />
-					<b>Current Status:</b> Modified with a ring storage and loader chamber so it can be used for outreach <br />
-					<b>GitHub Repository:</b> <a href="https://github.com/Gemini4575/Lyra-Outreach"> Lyra Outreach Code</a><br />
-					Lyra was a 6 wheel drop center drivetrain that could shoot a ring clear across the field
+				<div class="robotCardRight">
+					<img src="images/lyra.jpg" />
+					<div class="desc">
+						<h2>Lyra </h2>
+						<b>Season:</b> 2024<br />
+						<b>Record:</b> 16-16-2 <br />
+						<b>Current Status:</b> Modified with a ring storage and loader chamber so it can be used for
+						outreach <br />
+						<b>GitHub Repository:</b> <a href="https://github.com/Gemini4575/Lyra-Outreach"> Lyra Outreach
+							Code</a><br />
+						Lyra was a 6 wheel drop center drivetrain that could shoot a ring clear across the field
+					</div>
 				</div>
-			</div>
-			<div class="robotCardLeft">
-				<img src="images/swerveLyra.jpg"/>
-				<div class="desc">
-					<h2> Swerve Lyra </h2>
-					When the season ended we built a swerve version of our regular season robot from the models created by LYNK 9496<br />
-					<b>GitHub Repository:</b> <a href="https://github.com/Gemini4575/Swerve-Code-4575">Swerve Lyra Code</a>
+				<div class="robotCardLeft">
+					<img src="images/swerveLyra.jpg" />
+					<div class="desc">
+						<h2> Swerve Lyra </h2>
+						When the season ended we built a swerve version of our regular season robot from the models
+						created by LYNK 9496<br />
+						<b>GitHub Repository:</b> <a href="https://github.com/Gemini4575/Swerve-Code-4575">Swerve Lyra
+							Code</a>
+					</div>
 				</div>
-			</div>
-			<div class="robotCardRight">
-				<img src="images/savage.jpg"/>
-				<div class="desc">
-					<h2>Savage </h2>
-					<b>Season:</b> 2023<br/>
-					<b>Record:</b> 100-1-0 <br />
-					<b>Current Status:</b> Dissasembled <br />
-					Savage (pronounced sav-AHJ) was an 8 CIM mecanum drivetrain that could shoot a cube 10 to 12 feet and had a flagpole that could be lowered
-					to allow it to shoot cubes from futher out in the field.
+				<div class="robotCardRight">
+					<img src="images/savage.jpg" />
+					<div class="desc">
+						<h2>Savage </h2>
+						<b>Season:</b> 2023<br />
+						<b>Record:</b> 100-1-0 <br />
+						<b>Current Status:</b> Dissasembled <br />
+						Savage (pronounced sav-AHJ) was an 8 CIM mecanum drivetrain that could shoot a cube 10 to 12
+						feet and had a flagpole that could be lowered
+						to allow it to shoot cubes from futher out in the field.
+					</div>
 				</div>
-			</div>
-			<div id="footer">
-				&nbsp;
+				<div id="footer">
+					&nbsp;
+				</div>
 			</div>
 		</div>
-		<footer class="sponsor-footer" aria-hidden="false">
-        <div class="sponsor-thanks-inner"><strong>Thanks to our sponsors</strong></div>
-        <div class="sponsor-logos">
-            <img src="sponsors/L3Harris_Technologies-Logo.png" alt="L3Harris">
-            <img src="sponsors/main-logo-oswald.svg" alt="Main Logo">
-            <img src="sponsors/stark-industries.png" alt="Stark Industries">
-            <img src="sponsors/GSEP-logo.png" alt="Diet Pepsi">
-            <img src="sponsors/Corellian_Engineering_Corporation.svg" alt="Corellian">
-            <img src="sponsors/DoD-STEM-logo.png" alt="DnD">
-            <img src="sponsors/Airbnb_Logo.png" alt="Airbnb">
-        </div>
-    </footer>
-	</body>
-	<script>
-		const teamName = 'gemini';
-	</script>
+	</div>
+	<footer class="sponsor-footer" aria-hidden="false">
+		<div class="sponsor-thanks-inner"><strong>Thanks to our sponsors</strong></div>
+		<div class="sponsor-logos">
+			<img src="sponsors/L3Harris_Technologies-Logo.png" alt="L3Harris">
+			<img src="sponsors/main-logo-oswald.svg" alt="Main Logo">
+			<img src="sponsors/stark-industries.png" alt="Stark Industries">
+			<img src="sponsors/GSEP-logo.png" alt="Diet Pepsi">
+			<img src="sponsors/Corellian_Engineering_Corporation.svg" alt="Corellian">
+			<img src="sponsors/DoD-STEM-logo.png" alt="DnD">
+			<img src="sponsors/Airbnb_Logo.png" alt="Airbnb">
+		</div>
+	</footer>
+</body>
+<script>
+	const teamName = 'gemini';
+</script>
 
-	<!-- Local fallback data (used when opened via file:// or when proxy is unavailable) -->
-	<script id="competitions-fallback" type="application/json">
+<!-- Local fallback data (used when opened via file:// or when proxy is unavailable) -->
+<script id="competitions-fallback" type="application/json">
 	[
 		{ "year": 2026, "name": "FMA District Philadelphia Event", "awards": "" },
 		{ "year": 2026, "name": "FMA District Bensalem Event", "awards": "" },
@@ -169,14 +258,14 @@
 	]
 	</script>
 
-	<script>
+<script>
 	async function fillCompetitionTable(events) {
 		const table = document.getElementById('competitionTable');
 		if (!table) return;
 		// Clear existing rows except header
 		Array.from(table.querySelectorAll('tr')).slice(1).forEach(r => r.remove());
 		// Sort and append
-		events.sort((a,b)=>b.year - a.year).forEach(ev => {
+		events.sort((a, b) => b.year - a.year).forEach(ev => {
 			const tr = document.createElement('tr');
 			tr.innerHTML = `<td>${ev.year}</td><td>${ev.name}</td><td>${ev.awards || ''}</td>`;
 			table.appendChild(tr);
@@ -241,8 +330,9 @@
 	}
 
 	document.addEventListener('DOMContentLoaded', loadCompetitions);
-	</script>
+</script>
 
-	<script src="scripts/jquery-3.7.1.min.js"></script>
-	<script src="scripts/commonScripts.js"></script>
+<script src="scripts/jquery-3.7.1.min.js"></script>
+<script src="scripts/commonScripts.js"></script>
+
 </html>

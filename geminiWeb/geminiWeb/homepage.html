@@ -5,96 +5,10 @@
   <meta charset="UTF-8">
   <title>Eastern Pennsylvania Robotics Alliance (EPRA)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="CommonStyles.css">
-  <style>
-    /* --- Hero Section --- */
-    .hero-container {
-      margin-top: 20px;
-      text-align: center;
-      position: relative;
-    }
-
-    .hero-slides {
-      width: 500px;
-      height: 350px;
-      margin: 0 auto;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .slide {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      opacity: 0;
-      transition: opacity 1.5s ease-in-out;
-    }
-
-    .active-slide {
-      opacity: 1;
-    }
-
-    .hero-dots {
-      margin-top: 10px;
-      display: flex;
-      justify-content: center;
-      gap: 6px;
-    }
-
-    .dot {
-      width: 10px;
-      height: 10px;
-      background: #ccc;
-      border-radius: 50%;
-      cursor: pointer;
-    }
-
-    .active-dot {
-      background: #000;
-    }
-
-    /* --- Round Features --- */
-    .features {
-      display: flex;
-      justify-content: center;
-      margin-top: 40px;
-      gap: 120px;
-      text-align: center;
-    }
-
-    .feat img {
-      width: 110px;
-      height: 110px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-
-    .feat-title {
-      margin-top: 10px;
-      font-size: 18px;
-      color: green;
-      font-weight: bold;
-    }
-
-    .feat-text {
-      margin-top: 6px;
-      color: #444;
-      font-size: 14px;
-      width: 200px;
-    }
-
-    .feat a {
-      display: block;
-      margin-top: 10px;
-      color: #0b0d54;
-      font-size: 14px;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="page-homepage">
 
   <!-- Header -->
   <div class="header-wrap">
@@ -122,16 +36,31 @@
 
   <!-- Navigation -->
   <nav>
-    <ul>
-      <li class="active">Home</li>
-      <li>About Us</li>
-      <li>Our Teams</li>
-      <li>Summer Camp</li>
-      <li>Sponsors</li>
-      <li>Contact Us</li>
-      <li>Donate</li>
-      <li>Robotstock</li>
-      <li>Curriculum</li>
+    <ul class="menu">
+      <li class="active"><a href="homepage.html">Home</a></li>
+      <li><a href="aboutUs.html">About Us</a>
+        <ul class="submenu">
+          <li><a href="mission.html">Mission Statement</a></li>
+          <li><a href="outreach.html">Outreach</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="press.html">Press</a></li>
+          <li><a href="photoGallery.html">Photo Gallery</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="ourTeams.html">Our Teams</a>
+        <ul class="submenu">
+          <li><a href="gemini.html">FRC 4575 Gemini</a></li>
+          <li><a href="mallrats.html">FTC 18387 Mall Rats</a></li>
+          <li><a href="join.html">Join Our Teams</a></li>
+        </ul>
+      </li>
+      <li><a href="camps.html">Summer Camp</a></li>
+      <li><a href="sponsors.html">Sponsors</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="robotstock.html">Robotstock</a></li>
+      <li><a href="curriculum.html">Curriculum</a></li>
     </ul>
   </nav>
 

@@ -1,126 +1,219 @@
 <!DOCTYPE html>
-<html class="theme-mallrats">
-	<head>
-		<link rel="stylesheet" href="commonStyles.css">
-		<link rel="stylesheet" href="mallRatsStyles.css">
-		<link rel="stylesheet" href="theme.css">
-		<script src="https://kit.fontawesome.com/0c1f377606.js" crossorigin="anonymous"></script>
-	</head>
-	<body class="theme-mallrats">
+<html class="theme-mallrats" lang="en">
 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FTC 18387 Mall Rats | EPRA</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/0c1f377606.js" crossorigin="anonymous"></script>
+</head>
 
+<body class="theme-mallrats">
+	<div class="header-wrap">
+		<div class="logo">
+			<img src="images/EPRAlogo.jpg" alt="EPRA logo">
+		</div>
+		<div class="title-area">
+			<h1>Eastern Pennsylvania Robotics Alliance (EPRA)</h1>
+			<div class="subtitle">FIRST Robotics Programming in Partnership with 4H of Delaware County and The Girl
+				Scouts of Eastern PA.</div>
+		</div>
+		<div class="social">
+			<a href="https://www.instagram.com/frc_4575/" target="_blank">
+				<img src="images/icons8-instagram-logo-94.png" alt="Instagram">
+			</a>
+			<a href="https://www.facebook.com/frc4575" target="_blank">
+				<img src="images/icons8-facebook-48.png" alt="Facebook">
+			</a>
+			<a href="https://x.com/frcteam4575" target="_blank">
+				<img src="images/xLogo.png" alt="X">
+			</a>
+		</div>
+	</div>
+	<nav>
+		<ul class="menu">
+			<li><a href="homepage.html">Home</a></li>
+			<li><a href="aboutUs.html">About Us</a>
+				<ul class="submenu">
+					<li><a href="mission.html">Mission Statement</a></li>
+					<li><a href="outreach.html">Outreach</a></li>
+					<li><a href="history.html">History</a></li>
+					<li><a href="press.html">Press</a></li>
+					<li><a href="photoGallery.html">Photo Gallery</a></li>
+				</ul>
+			</li>
+			<li class="active">
+				<a href="ourTeams.html">Our Teams</a>
+				<ul class="submenu">
+					<li><a href="gemini.html">FRC 4575 Gemini</a></li>
+					<li><a href="mallrats.html">FTC 18387 Mall Rats</a></li>
+					<li><a href="join.html">Join Our Teams</a></li>
+				</ul>
+			</li>
+			<li><a href="camps.html">Summer Camp</a></li>
+			<li><a href="sponsors.html">Sponsors</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li><a href="donate.html">Donate</a></li>
+			<li><a href="robotstock.html">Robotstock</a></li>
+			<li><a href="curriculum.html">Curriculum</a></li>
+		</ul>
+	</nav>
+	<div class="page-shell">
 		<div class="backgroundDiv">
-			<img class="logo" src="images/mallrats.png">
-			<div>
-				<div id="social" class="leftDiv">
-					<h3> Follow us:</h3>
-					<a href="https://www.instagram.com/ftc_18387/" target="_"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-					<a href="https://www.facebook.com/FTCTEAM18387" target="_"><i class="fa-brands fa-facebook fa-2xl"></i></a>
-					<a href="https://bsky.app/profile/geminifrc4575.bsky.social" target="_"><i class="fa-brands fa-bluesky fa-2xl"></i></a>
-					<a href="https://github.com/mallratsftc01/TheDeep" target="_"><i class="fa-brands fa-github fa-2xl"></i></a>
-				</div>
-				<div id="sponsors" class="centerDiv">
-				</div>
-				<div class="rightDiv">
-					<div id="events" style="margin-left: auto;" class="textDiv">
-						Upcoming Events:
+			<div class="team-topbar">
+				<div class="team-panel">
+					<h3>Follow Mall Rats</h3>
+					<div class="team-social-links">
+						<a href="https://www.instagram.com/ftc_18387/" target="_"><i
+								class="fa-brands fa-instagram fa-2xl"></i></a>
+						<a href="https://www.facebook.com/FTCTEAM18387" target="_"><i
+								class="fa-brands fa-facebook fa-2xl"></i></a>
+						<a href="https://bsky.app/profile/geminifrc4575.bsky.social" target="_"><i
+								class="fa-brands fa-bluesky fa-2xl"></i></a>
+						<a href="https://github.com/mallratsftc01/TheDeep" target="_"><i
+								class="fa-brands fa-github fa-2xl"></i></a>
 					</div>
 				</div>
+				<div class="team-logo-wrap">
+					<img class="team-logo" src="images/mallrats.png" alt="Mall Rats logo">
+				</div>
+				<div class="team-panel">
+					<h3>Upcoming Events</h3>
+					<div id="events" class="team-event-copy">Upcoming Events:</div>
+				</div>
 			</div>
-			<div id="description" class="textDiv">
-				<h2> About Us </h2>
-				The Mallrats is part of the Eastern Pennsylvania Robotics Alliance (EPRA), a nonprofit organization that competes in FIRST robotics competitions.
-				FIRST is an international organization that organizes robotics competitions for kids grades k-12 where they learn how to engineer and collaborate 
-				to solve problems. The Mallrats competes in the FIRST Technical Challenge (FTC) section of the FIRST organization. FTC is where kids grade 7-12
-				build 18" by 18" by 18" robots made of aluminum, plastic, and other materials that they build and code themselves to compete with and against other
-				teams to complete tasks to earn points in competitions. The Mallrats has been competing in FTC since 2020, and since then the team members have
-				built awesome robots, had a lot of fun, and advanced to states.
-			</div>
-			<div id="history" class="textDiv">
-				<h2> History </h2>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed lorem faucibus, consectetur velit eget, varius ex. Nulla massa risus, scelerisque id
-				egestas ac, facilisis quis nibh. Suspendisse sodales iaculis consectetur. Nunc vulputate feugiat tortor cursus lacinia. Phasellus sit amet urna tincidunt,
-				cursus sapien non, consectetur felis. Etiam blandit bibendum libero, at finibus lacus faucibus sed. Curabitur sodales facilisis neque gravida tempus.
-				Nullam ut sem sed ex maximus fringilla commodo sit amet dui. Etiam sed pulvinar augue. In porttitor dignissim dolor, non tempor erat blandit non.
-				Etiam magna eros, rhoncus id sapien egestas, suscipit lacinia dui. Suspendisse potenti. Phasellus dapibus lectus ac elit consectetur, a tincidunt 
-				dui condimentum. Pellentesque iaculis ligula nec eros ultrices, dictum dignissim felis mattis. Nullam malesuada mollis erat ac iaculis.
+			<div class="team-grid">
+				<div id="description" class="textDiv team-section">
+					<h2> About Us </h2>
+					The Mallrats is part of the Eastern Pennsylvania Robotics Alliance (EPRA), a nonprofit organization
+					that competes in FIRST robotics competitions.
+					FIRST is an international organization that organizes robotics competitions for kids grades k-12
+					where they learn how to engineer and collaborate
+					to solve problems. The Mallrats competes in the FIRST Technical Challenge (FTC) section of the FIRST
+					organization. FTC is where kids grade 7-12
+					build 18" by 18" by 18" robots made of aluminum, plastic, and other materials that they build and
+					code themselves to compete with and against other
+					teams to complete tasks to earn points in competitions. The Mallrats has been competing in FTC since
+					2020, and since then the team members have
+					built awesome robots, had a lot of fun, and advanced to states.
+				</div>
+				<div id="history" class="textDiv team-section">
+					<h2> History </h2>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed lorem faucibus, consectetur velit
+					eget, varius ex. Nulla massa risus, scelerisque id
+					egestas ac, facilisis quis nibh. Suspendisse sodales iaculis consectetur. Nunc vulputate feugiat
+					tortor cursus lacinia. Phasellus sit amet urna tincidunt,
+					cursus sapien non, consectetur felis. Etiam blandit bibendum libero, at finibus lacus faucibus sed.
+					Curabitur sodales facilisis neque gravida tempus.
+					Nullam ut sem sed ex maximus fringilla commodo sit amet dui. Etiam sed pulvinar augue. In porttitor
+					dignissim dolor, non tempor erat blandit non.
+					Etiam magna eros, rhoncus id sapien egestas, suscipit lacinia dui. Suspendisse potenti. Phasellus
+					dapibus lectus ac elit consectetur, a tincidunt
+					dui condimentum. Pellentesque iaculis ligula nec eros ultrices, dictum dignissim felis mattis.
+					Nullam malesuada mollis erat ac iaculis.
 
-				Sed id metus quis purus tempor ultrices. Proin sodales orci id massa ullamcorper, eu vulputate orci tristique. Quisque lobortis sollicitudin egestas.
-				Curabitur quis turpis urna. Donec ante lacus, placerat sed semper id, convallis eget justo. Etiam rutrum, mauris id ullamcorper laoreet, orci nisi
-				tempus neque, accumsan pellentesque turpis elit id augue. Nunc et ante mi. Praesent commodo ultricies varius. Nam sit amet dictum sem, at pretium
-				mauris. Vivamus consequat leo vitae diam tempus finibus. Aliquam elementum metus id neque venenatis pretium. Nulla vel orci velit.
-			</div>
-			<img src="images/mallRatsStadium.jpg" width="400" height="300" class="center padded" title="Malls Rats practice field">
-			<div class="textDiv">
-				<h2> Our Robots </h2>
-				Vivamus eget eros id mauris sodales auctor at sit amet orci. Sed sagittis, tellus nec molestie eleifend, leo metus feugiat diam, at pulvinar ex nibh ac 
-				sem. Nunc lacinia nisi nec odio sagittis finibus. Proin egestas semper dui ac imperdiet. Sed elit nibh, tempus non ligula eu, luctus condimentum nulla.
-				Sed eu hendrerit sem. Nulla blandit sem at finibus tristique. Donec tempus, massa et euismod tempus, risus nibh ultrices eros, eu tempor sem nulla at nunc.
-				Nulla vehicula mollis gravida. Quisque commodo lectus laoreet nibh sagittis, in posuere turpis ullamcorper. Curabitur eget tincidunt magna, quis tempus
-				justo. Pellentesque varius vulputate sem in ultrices. Integer dapibus erat ac ante fringilla, ac suscipit lorem lobortis. Donec nisi tortor, auctor a
-				egestas eu, convallis sit amet leo. Nam lacus enim, efficitur ullamcorper sollicitudin vitae, faucibus vitae purus.
-			</div>
-			<div class="robotCardRight">
-				<img src="images/squigle.jpg"/>
-				<div class="desc">
-					<h2>Squigle </h2>
-					<b>Season:</b> Outreach<br/>
-					<b>GitHub Repository:</b> <a href="https://github.com/Gemini4575/Lyra-Outreach"> Lyra Outreach Code</a><br />
-					Squigle is our outreach robot, he was orginally created to help the team learn Java programming but morphed over time into the cutest outreach robot ever.
+					Sed id metus quis purus tempor ultrices. Proin sodales orci id massa ullamcorper, eu vulputate orci
+					tristique. Quisque lobortis sollicitudin egestas.
+					Curabitur quis turpis urna. Donec ante lacus, placerat sed semper id, convallis eget justo. Etiam
+					rutrum, mauris id ullamcorper laoreet, orci nisi
+					tempus neque, accumsan pellentesque turpis elit id augue. Nunc et ante mi. Praesent commodo
+					ultricies varius. Nam sit amet dictum sem, at pretium
+					mauris. Vivamus consequat leo vitae diam tempus finibus. Aliquam elementum metus id neque venenatis
+					pretium. Nulla vel orci velit.
 				</div>
-			</div>
-			<div class="robotCardLeft">
-				<img src="images/peri.png"/>
-				<div class="desc">
-					<h2> Peri? </h2>
-					<b>Season:</b> 2024 - 25 <br />
-					<b>Record:</b> 4-1-0<br/>
-					<b>GitHub Repository:</b> <a href="https://github.com/Gemini4575/Swerve-Code-4575">Swerve Lyra Code</a><br/>
-					Peri has a mecanum drivetrain with 3 odometery pods, a linear slide arm that can reach to the center of the submersible and a linear slide lift that can
-					reach the high basket.
+				<div class="team-section">
+					<img src="images/mallRatsStadium.jpg" width="400" height="300" class="center padded"
+						title="Malls Rats practice field">
 				</div>
-			</div>
-			<div class="robotCardRight">
-				<img src="images/juiceboxAndAward.png"/>
-				<div class="desc">
-					<h2> Juicebox </h2>
-					<b>Season:</b> 2023 - 24 <br />
-					<b>Record:</b> 8-13-0<br/>
-					<b>GitHub Repository:</b> <a href="https://github.com/Gemini4575/Swerve-Code-4575">Swerve Lyra Code</a><br/>
-					Juicebox had a mecanum drivetrain and a claw that could pick up 2 stacked pixels. Its drone launcher scored very well
+				<div class="textDiv team-section">
+					<h2> Our Robots </h2>
+					Vivamus eget eros id mauris sodales auctor at sit amet orci. Sed sagittis, tellus nec molestie
+					eleifend, leo metus feugiat diam, at pulvinar ex nibh ac
+					sem. Nunc lacinia nisi nec odio sagittis finibus. Proin egestas semper dui ac imperdiet. Sed elit
+					nibh, tempus non ligula eu, luctus condimentum nulla.
+					Sed eu hendrerit sem. Nulla blandit sem at finibus tristique. Donec tempus, massa et euismod tempus,
+					risus nibh ultrices eros, eu tempor sem nulla at nunc.
+					Nulla vehicula mollis gravida. Quisque commodo lectus laoreet nibh sagittis, in posuere turpis
+					ullamcorper. Curabitur eget tincidunt magna, quis tempus
+					justo. Pellentesque varius vulputate sem in ultrices. Integer dapibus erat ac ante fringilla, ac
+					suscipit lorem lobortis. Donec nisi tortor, auctor a
+					egestas eu, convallis sit amet leo. Nam lacus enim, efficitur ullamcorper sollicitudin vitae,
+					faucibus vitae purus.
 				</div>
-			</div>
-			<div class="robotCardLeft">
-				<img src="images/wally.png"/>
-				<div class="desc">
-					<h2> Wally </h2>
-					<b>Season:</b> 2022 - 23 <br />
-					<b>Record:</b> 1-4-0<br/>
-					<b>GitHub Repository:</b> <a href="https://github.com/Gemini4575/Swerve-Code-4575">Swerve Lyra Code</a><br/>
-					Wally had a mecanum drivetrain and a custom build 3 stage nested tube tower with a rack and pinion slider to reach out arm that can reach to the center of the submersible and a linear slide lift that can
-					reach the high basket.
+				<div class="robotCardRight">
+					<img src="images/squigle.jpg" />
+					<div class="desc">
+						<h2>Squigle </h2>
+						<b>Season:</b> Outreach<br />
+						<b>GitHub Repository:</b> <a href="https://github.com/Gemini4575/Lyra-Outreach"> Lyra Outreach
+							Code</a><br />
+						Squigle is our outreach robot, he was orginally created to help the team learn Java programming
+						but morphed over time into the cutest outreach robot ever.
+					</div>
 				</div>
-			</div>
-			<div id="footer">
-				&nbsp;
+				<div class="robotCardLeft">
+					<img src="images/peri.png" />
+					<div class="desc">
+						<h2> Peri? </h2>
+						<b>Season:</b> 2024 - 25 <br />
+						<b>Record:</b> 4-1-0<br />
+						<b>GitHub Repository:</b> <a href="https://github.com/Gemini4575/Swerve-Code-4575">Swerve Lyra
+							Code</a><br />
+						Peri has a mecanum drivetrain with 3 odometery pods, a linear slide arm that can reach to the
+						center of the submersible and a linear slide lift that can
+						reach the high basket.
+					</div>
+				</div>
+				<div class="robotCardRight">
+					<img src="images/juiceboxAndAward.png" />
+					<div class="desc">
+						<h2> Juicebox </h2>
+						<b>Season:</b> 2023 - 24 <br />
+						<b>Record:</b> 8-13-0<br />
+						<b>GitHub Repository:</b> <a href="https://github.com/Gemini4575/Swerve-Code-4575">Swerve Lyra
+							Code</a><br />
+						Juicebox had a mecanum drivetrain and a claw that could pick up 2 stacked pixels. Its drone
+						launcher scored very well
+					</div>
+				</div>
+				<div class="robotCardLeft">
+					<img src="images/wally.png" />
+					<div class="desc">
+						<h2> Wally </h2>
+						<b>Season:</b> 2022 - 23 <br />
+						<b>Record:</b> 1-4-0<br />
+						<b>GitHub Repository:</b> <a href="https://github.com/Gemini4575/Swerve-Code-4575">Swerve Lyra
+							Code</a><br />
+						Wally had a mecanum drivetrain and a custom build 3 stage nested tube tower with a rack and
+						pinion slider to reach out arm that can reach to the center of the submersible and a linear
+						slide lift that can
+						reach the high basket.
+					</div>
+				</div>
+				<div id="footer">
+					&nbsp;
+				</div>
 			</div>
 		</div>
-	    <footer class="sponsor-footer" aria-hidden="false">
-        <div class="sponsor-thanks-inner"><strong>Thanks to our sponsors</strong></div>
-        <div class="sponsor-logos">
-            <img src="sponsors/L3Harris_Technologies-Logo.png" alt="L3Harris">
-            <img src="sponsors/main-logo-oswald.svg" alt="Main Logo">
-            <img src="sponsors/stark-industries.png" alt="Stark Industries">
-            <img src="sponsors/GSEP-logo.png" alt="Diet Pepsi">
-            <img src="sponsors/Corellian_Engineering_Corporation.svg" alt="Corellian">
-            <img src="sponsors/DoD-STEM-logo.png" alt="DnD">
-            <img src="sponsors/Airbnb_Logo.png" alt="Airbnb">
-        </div>
-    </footer>
+	</div>
+	<footer class="sponsor-footer" aria-hidden="false">
+		<div class="sponsor-thanks-inner"><strong>Thanks to our sponsors</strong></div>
+		<div class="sponsor-logos">
+			<img src="sponsors/L3Harris_Technologies-Logo.png" alt="L3Harris">
+			<img src="sponsors/main-logo-oswald.svg" alt="Main Logo">
+			<img src="sponsors/stark-industries.png" alt="Stark Industries">
+			<img src="sponsors/GSEP-logo.png" alt="Diet Pepsi">
+			<img src="sponsors/Corellian_Engineering_Corporation.svg" alt="Corellian">
+			<img src="sponsors/DoD-STEM-logo.png" alt="DnD">
+			<img src="sponsors/Airbnb_Logo.png" alt="Airbnb">
+		</div>
+	</footer>
 </body>
-	<script>
-		const teamName = 'mallrats';
-	</script>
-	<script src="scripts/jquery-3.7.1.min.js"></script>
-	<script src="scripts/commonScripts.js"></script>
+<script>
+	const teamName = 'mallrats';
+</script>
+<script src="scripts/jquery-3.7.1.min.js"></script>
+<script src="scripts/commonScripts.js"></script>
+
 </html>

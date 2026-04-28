@@ -1,75 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="commonStyles.css">
-    <link rel="stylesheet" href="theme.css">
-    <style>
-    body {
-        height: 100vh;
-        /* Using standard linear-gradient for 2025 modern browser support */
-        background: linear-gradient(70deg, crimson 30%, rgba(0,0,0,0) 30%), 
-                    linear-gradient(30deg, green 60%, purple 60%);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-    }
-
-    /* Container to hold images side-by-side */
-    .image-container {
-        display: flex;
-        gap: 20px; /* Adjust this value for space between the images */
-        align-items: center;
-    }
-
-    /* Page-specific image sizing for index.html only */
-    .image-container img {
-        max-width: 220px;/* biggest on wide screens */
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    /* Slightly smaller logo */
-    .image-container img.logo {
-        max-width: 200px;
-        width: 200px;
-    }
-
-    /* Responsive adjustments for narrow screens */
-    @media (max-width: 600px) {
-        .image-container {
-            flex-direction: column;
-            gap: 12px;
-        }
-        .image-container img {
-            max-width: 60vw;
-        }
-        .image-container img.logo {
-            max-width: 50vw;
-            width: auto;
-        }
-    }
-
-    /* Index-only sponsor-rail overrides to keep logos small and scrolling */
-    .sponsor-rail {
-        width: 90px;
-        height: 50vh;
-    }
-    .sponsor-rail img {
-        max-width: 70px;
-        height: auto;
-        display: block;
-    }
-    .sponsor-rail .rail-inner {
-        gap: 12px;
-        animation-duration: 18s;
-    }
-
-</style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="page-index">
 
 
     <h1> New Web Pages </h1>

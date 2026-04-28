@@ -5,244 +5,10 @@
     <meta charset="UTF-8" />
     <title>Join Our Teams | EPRA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- =====================
-       BASE STYLES
-  ====================== -->
-    <style>
-        :root {
-            --green: #20871b;
-            --dark-green: #003300;
-            --text: #222;
-            --bg: #ffffff;
-            --light-gray: #f4f4f4;
-            --focus: #ffbf47;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            color: var(--text);
-            background: var(--bg);
-            line-height: 1.6;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        a {
-            color: var(--green);
-            text-decoration: none;
-        }
-
-        /* =====================
-       ACCESSIBILITY
-    ====================== */
-        a:focus-visible {
-            outline: 3px solid var(--focus);
-            outline-offset: 3px;
-        }
-
-        /* =====================
-       HEADER
-    ====================== */
-        header {
-            border-bottom: 1px solid #ddd;
-            background: #fff;
-        }
-
-        .header-inner {
-            max-width: 1200px;
-            margin: auto;
-            padding: 1rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .logo img {
-            width: 80px;
-        }
-
-        .site-title {
-            font-size: 1.1rem;
-            font-weight: bold;
-        }
-
-        .site-description {
-            font-size: 0.85rem;
-            color: #555;
-        }
-
-        /* =====================
-       SOCIAL ICONS
-    ====================== */
-        .social {
-            display: flex;
-            gap: 0.75rem;
-        }
-
-        .social a {
-            width: 28px;
-            height: 28px;
-            transition: transform 0.2s ease, opacity 0.2s ease;
-        }
-
-        .social a:hover {
-            transform: translateY(-2px);
-            opacity: 0.8;
-        }
-
-        /* =====================
-       NAVIGATION
-    ====================== */
-        nav {
-            background: var(--green);
-        }
-
-        .menu {
-            max-width: 1200px;
-            margin: auto;
-            padding: 0;
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .menu>li {
-            position: relative;
-        }
-
-        .menu>li>a {
-            display: block;
-            padding: 0.9rem 1rem;
-            color: white;
-            font-weight: bold;
-        }
-
-        .menu>li>a:hover {
-            background: rgba(0, 0, 0, 0.15);
-        }
-
-        /* Dropdown */
-        .submenu {
-            display: none;
-            position: absolute;
-            background: white;
-            list-style: none;
-            padding: 0;
-            min-width: 220px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-            z-index: 100;
-        }
-
-        .submenu a {
-            display: block;
-            padding: 0.6rem 0.9rem;
-            color: var(--text);
-        }
-
-        .submenu a:hover {
-            background: var(--light-gray);
-        }
-
-        .menu li:hover>.submenu {
-            display: block;
-        }
-
-        /* =====================
-       MAIN CONTENT
-    ====================== */
-        main {
-            max-width: 1000px;
-            margin: auto;
-            padding: 2rem 1rem;
-        }
-
-        h1,
-        h2,
-        h3 {
-            color: var(--dark-green);
-        }
-
-        .center {
-            text-align: center;
-        }
-
-        /* =====================
-       IMAGE ROW
-    ====================== */
-        .image-row {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin: 2rem 0;
-        }
-
-        .image-row img {
-            width: 150px;
-        }
-
-        /* =====================
-       PROGRAM CARDS
-    ====================== */
-        .card {
-            background: #fff;
-            border: 1px solid #ddd;
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 6px;
-            transition: transform 0.25s ease, box-shadow 0.25s ease;
-        }
-
-        /* Hover only applies if card contains links */
-        .card:has(a:hover),
-        .card:has(a:focus-visible) {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-        }
-
-        .card a {
-            font-weight: bold;
-        }
-
-        .card a:hover {
-            text-decoration: underline;
-        }
-
-        /* =====================
-       FOOTER
-    ====================== */
-        footer {
-            background: #111;
-            color: #fff;
-            padding: 1.5rem;
-            text-align: center;
-            margin-top: 4rem;
-        }
-
-        footer a {
-            color: #9adf9a;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
+<body class="page-join">
 
     <!-- =====================
      HEADER
@@ -271,35 +37,33 @@
 
     </div>
 
-    <!-- =====================
-       NAV
-  ====================== -->
+    <!-- Navigation -->
     <nav>
         <ul class="menu">
-            <!-- Replace # with actual pages later -->
-            <li><a href="#">Home</a></li>
-
-            <li>
-                <a href="#">About Us</a>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="aboutUs.html">About Us</a>
                 <ul class="submenu">
-                    <li><a href="#">Mission Statement</a></li>
-                    <li><a href="#">Outreach</a></li>
-                    <li><a href="#">History</a></li>
+                    <li><a href="mission.html">Mission Statement</a></li>
+                    <li><a href="outreach.html">Outreach</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="press.html">Press</a></li>
+                    <li><a href="photoGallery.html">Photo Gallery</a></li>
                 </ul>
             </li>
-
-            <li>
-                <a href="#">Our Teams</a>
+            <li class="active">
+                <a href="ourTeams.html">Our Teams</a>
                 <ul class="submenu">
-                    <li><a href="#">Join Our Teams</a></li>
-                    <li><a href="#">FRC 4575 Gemini</a></li>
-                    <li><a href="#">FLL Programs</a></li>
+                    <li><a href="gemini.html">FRC 4575 Gemini</a></li>
+                    <li><a href="mallrats.html">FTC 18387 Mall Rats</a></li>
+                    <li><a href="join.html">Join Our Teams</a></li>
                 </ul>
             </li>
-
-            <li><a href="#">Sponsors</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Donate</a></li>
+            <li><a href="camps.html">Summer Camp</a></li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="robotstock.html">Robotstock</a></li>
+            <li><a href="curriculum.html">Curriculum</a></li>
         </ul>
     </nav>
     </header>
@@ -319,7 +83,7 @@
         </div>
 
         <p>
-            We are currently accepting registrations for our Spring 2025 session.
+            We are currently accepting registrations for our Spring 2026 session.
             Programs are available for students entering Pre-K through 12th grade.
         </p>
 
@@ -329,25 +93,54 @@
         <section class="card">
             <h2>FIRST LEGO League Discover (Pre-K – Grade 1)</h2>
             <p>
-                Our youngest learners explore early programming, robotics,
-                engineering concepts, and creativity.
+                This is a program for our youngest learners. Our kids entering Pre-K through grade 1 explore beginning
+                programming, building, and early robots. We learn engineering ideas, explore the world around us through
+                interaction and art while encouraging exposure to new ideas!
             </p>
 
-            <!-- Placeholder links -->
             <p><a href="#">COED Tuesdays (5:30–6:30)</a></p>
             <p><a href="#">All-Girl Wednesdays (5:30–6:30)</a></p>
         </section>
 
         <section class="card">
+            <h2>FIRST LEGO League Explore (Grades 1–2)</h2>
+            <p>
+                Team members build simple machines and simple robots using LEGO. We also explore various subjects in
+                science. This program mixes hands on activities with games, programming, and plenty of excitement!
+            </p>
+            <p>All Girl and Coed teams available.</p>
+
+            <p><a href="#">COED Tuesdays (5:30–6:30)</a></p>
+            <p><a href="#">COED Wednesdays (5:30–6:30)</a></p>
+            <p><a href="#">All-Girl Wednesdays (5:30–6:30)</a></p>
+        </section>
+
+        <section class="card">
+            <h2>FIRST LEGO League Basic (Grades 3–5)</h2>
+            <p>
+                For Grades 3 – 5. This is for students who want the FIRST LEGO League experience in a lower pressure
+                environment. This is a skill building level that will provide the tools necessary to be successful and
+                explore engineering challenges. Students will learn to design, program, and strategize robots as well as
+                learn teamwork skills. Students will create an end of session showcase for friends, family, and team
+                members. There is no additional homework with this level.
+            </p>
+            <p><a href="#">FALL ONLY– FIRST LEGO League Challenge SATURDAY 10am – 11:30am</a></p>
+        </section>
+        <section class="card">
             <h2>FIRST LEGO League Challenge (Grades 3–8)</h2>
             <p>
-                A competitive robotics program teaching programming,
-                engineering, teamwork, and problem-solving.
+                This is for students who want to jump right into a competitive environment and are able to work on a
+                team. FIRST LEGO League Challenge encompasses three parts. There is the robot game, a project in which
+                the students solve a real world problem, and team work. These students will learn public speaking,
+                programming, engineering design, strategy, and research skills. The teams meet for an hour and a half
+                per week but do sometimes have homework. Mentors and coaches will add extra hours in the weeks leading
+                up to competition and reserve the right to extend meetings (based on availability of the team members)
+                if additional time is needed. The teams compete with teams from the tri-state area.
             </p>
 
-            <p><a href="#">Competition Team – Mondays</a></p>
-            <p><a href="#">Competition Team – Tuesdays</a></p>
-            <p><a href="#">All-Girl Team – Wednesdays</a></p>
+            <p><a href="#">Competition Team – Mondays 6:30pm - 8:00pm</a></p>
+            <p><a href="#">Competition Team – Tuesdays 6:30pm - 8:00pm</a></p>
+            <p><a href="#">All-Girl Team – Wednesdays 6:30pm - 8:00pm</a></p>
         </section>
 
         <section class="card">
@@ -367,7 +160,7 @@
      FOOTER
 ===================== -->
     <footer>
-        © 2025 Eastern Pennsylvania Robotics Alliance (EPRA)
+        © 2026 Eastern Pennsylvania Robotics Alliance (EPRA)
         <br>
         <small>Standalone HTML – no WordPress required</small>
     </footer>
